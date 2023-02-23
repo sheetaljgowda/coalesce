@@ -256,7 +256,11 @@ steps:
               - columnReferences:
                   - columnCounter: 2011
                     stepCounter: "178"
-                transform: ""
+                transform: |-
+                  CASE WHEN DESCRIPTION='UNDERWRITER RECEIVED' THEN '01 Qualified'  WHEN DESCRIPTION in ('UNDERWRITER QUOTED','DISCLOSURE APPROVED','FIELD OFFICE RECEIVED','FIELD OFFICE SUBMITTED',  'SUPPORT SERVICES RECEIVED') then  '03 Prospect'  WHEN DESCRIPTION in ( 'SOLD’, ’SOLD UNAPPROVED') then '04 Sold'      
+                  WHEN DESCRIPTION in ('CLOSED', 'ROSETTA 05 NOT SOLD_LOST','SUPPORT SERVICES PENDED',  'UNDERWRITER PENDED') then  '05 Not Sold'
+                  else 'Not Defined' 
+                  END
           - columnReference:
               columnCounter: 2032
               stepCounter: "179"

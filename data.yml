@@ -4,21 +4,21 @@ locations:
   SRC:
     mappingDefinitions:
       "4":
-        database: SNOWFLAKE_SAMPLE_DATA
-        schema: TPCH_SF1
+        database: COALESCE_TEST
+        schema: TEST
   STG:
     mappingDefinitions:
       "36":
         database: ""
         schema: ""
       "4":
-        database: ""
-        schema: ""
+        database: COALESCE_TEST
+        schema: TEST_TGT
   TARGET:
     mappingDefinitions:
       "4":
-        database: COALESCE_DEMO
-        schema: COALESCE_REULTS
+        database: COALESCE_TEST
+        schema: TEST_TGT
 macros: {}
 packages:
   COALESCE-DATA_VAULT:

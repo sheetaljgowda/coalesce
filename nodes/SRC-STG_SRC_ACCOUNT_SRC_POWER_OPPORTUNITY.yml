@@ -1,0 +1,313 @@
+steps:
+  STG_SRC_ACCOUNT_SRC_POWER_OPPORTUNITY-179:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationID: ""
+      locationName: SRC
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 2014
+              stepCounter: "179"
+            dataType: VARCHAR(50)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ACCOUNT_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 1994
+                    stepCounter: "177"
+                transform: ""
+          - columnReference:
+              columnCounter: 2015
+              stepCounter: "179"
+            dataType: VARCHAR(50)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ACCOUNT_STREET
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 1995
+                    stepCounter: "177"
+                transform: ""
+          - columnReference:
+              columnCounter: 2016
+              stepCounter: "179"
+            dataType: VARCHAR(30)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ACCOUNT_CITY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 1996
+                    stepCounter: "177"
+                transform: ""
+          - columnReference:
+              columnCounter: 2017
+              stepCounter: "179"
+            dataType: VARCHAR(30)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ACCOUNT_STATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 1997
+                    stepCounter: "177"
+                transform: ""
+          - columnReference:
+              columnCounter: 2018
+              stepCounter: "179"
+            dataType: VARCHAR(20)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ACCOUNT_COUNTRY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 1998
+                    stepCounter: "177"
+                transform: ""
+          - columnReference:
+              columnCounter: 2019
+              stepCounter: "179"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ACCOUNT_POSTAL_CODE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 1999
+                    stepCounter: "177"
+                transform: ""
+          - columnReference:
+              columnCounter: 2020
+              stepCounter: "179"
+            dataType: VARCHAR(50)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: OPPORTUNITY_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2000
+                    stepCounter: "178"
+                transform: ""
+          - columnReference:
+              columnCounter: 2021
+              stepCounter: "179"
+            dataType: VARCHAR(50)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: OPPLINE_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2001
+                    stepCounter: "178"
+                transform: ""
+          - columnReference:
+              columnCounter: 2022
+              stepCounter: "179"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CLOSE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2002
+                    stepCounter: "178"
+                transform: ""
+          - columnReference:
+              columnCounter: 2023
+              stepCounter: "179"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CREATED_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2003
+                    stepCounter: "178"
+                transform: ""
+          - columnReference:
+              columnCounter: 2024
+              stepCounter: "179"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: EFFECTIVE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2004
+                    stepCounter: "178"
+                transform: ""
+          - columnReference:
+              columnCounter: 2026
+              stepCounter: "179"
+            dataType: VARCHAR(200)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ACCOUNT_NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2006
+                    stepCounter: "178"
+                transform: ""
+          - columnReference:
+              columnCounter: 2027
+              stepCounter: "179"
+            dataType: VARCHAR(25)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ACCOUNT_EID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2007
+                    stepCounter: "178"
+                transform: ""
+          - columnReference:
+              columnCounter: 2028
+              stepCounter: "179"
+            dataType: VARCHAR(150)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: OPP_OWNER_FULL_NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2008
+                    stepCounter: "178"
+                transform: ""
+          - columnReference:
+              columnCounter: 2029
+              stepCounter: "179"
+            dataType: VARCHAR(50)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: PRODUCT_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2009
+                    stepCounter: "178"
+                transform: ""
+          - columnReference:
+              columnCounter: 2030
+              stepCounter: "179"
+            dataType: VARCHAR(30)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SALES_CATEGORY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2010
+                    stepCounter: "178"
+                transform: ""
+          - columnReference:
+              columnCounter: 2031
+              stepCounter: "179"
+            dataType: VARCHAR(40)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SALES_STAGE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2011
+                    stepCounter: "178"
+                transform: ""
+          - columnReference:
+              columnCounter: 2032
+              stepCounter: "179"
+            dataType: VARCHAR(2000)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DESCRIPTION
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2012
+                    stepCounter: "178"
+                transform: ""
+          - columnReference:
+              columnCounter: 2033
+              stepCounter: "179"
+            dataType: VARCHAR(20)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: TYPE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2013
+                    stepCounter: "178"
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases:
+              SRC_ACCOUNT: "177"
+              SRC_POWER_OPPORTUNITY: "178"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: SRC
+                nodeName: SRC_ACCOUNT
+              - locationName: SRC
+                nodeName: SRC_POWER_OPPORTUNITY
+            join:
+              joinCondition: |-
+                FROM {{ ref('SRC', 'SRC_ACCOUNT') }} "SRC_ACCOUNT"
+                INNER JOIN {{ ref('SRC', 'SRC_POWER_OPPORTUNITY') }} "SRC_POWER_OPPORTUNITY"
+                ON "SRC_ACCOUNT".ACCOUNT_ID = "SRC_POWER_OPPORTUNITY".ACCOUNT_ID
+            name: STG_SRC_ACCOUNT_SRC_POWER_OPPORTUNITY
+            noLinkRefs: []
+      name: STG_SRC_ACCOUNT_SRC_POWER_OPPORTUNITY
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: "179"

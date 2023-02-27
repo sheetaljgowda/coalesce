@@ -1,0 +1,379 @@
+steps:
+  DIM_POWER_OPPORTUNITY_POWER_OPPORTUNITY-191:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationID: ""
+      locationName: SRC
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 2276
+              stepCounter: "191"
+            config: {}
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSurrogateKey: true
+            name: DIM_POWER_OPPORTUNITY_POWER_OPPORTUNITY_KEY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2277
+              stepCounter: "191"
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: POWEROPPORTUNITY_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2178
+                    stepCounter: "187"
+                transform: ""
+          - columnReference:
+              columnCounter: 2278
+              stepCounter: "191"
+            dataType: VARCHAR(50)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: OPPORTUNITY_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2157
+                    stepCounter: "187"
+                transform: ""
+          - columnReference:
+              columnCounter: 2279
+              stepCounter: "191"
+            dataType: VARCHAR(50)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: OPPLINE_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2158
+                    stepCounter: "187"
+                transform: ""
+          - columnReference:
+              columnCounter: 2280
+              stepCounter: "191"
+            dataType: TIMESTAMP
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LOAD_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2180
+                    stepCounter: "187"
+                transform: ""
+          - columnReference:
+              columnCounter: 2281
+              stepCounter: "191"
+            dataType: VARCHAR
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: RECORD_SOURCE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2181
+                    stepCounter: "187"
+                transform: ""
+          - columnReference:
+              columnCounter: 2282
+              stepCounter: "191"
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SOURCEACCOUNT_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2270
+                    stepCounter: "190"
+                transform: ""
+          - columnReference:
+              columnCounter: 2283
+              stepCounter: "191"
+            dataType: VARCHAR(200)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ACCOUNT_NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2255
+                    stepCounter: "190"
+                transform: ""
+          - columnReference:
+              columnCounter: 2284
+              stepCounter: "191"
+            dataType: VARCHAR(50)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ACCOUNT_STREET
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2245
+                    stepCounter: "190"
+                transform: ""
+          - columnReference:
+              columnCounter: 2285
+              stepCounter: "191"
+            dataType: VARCHAR(30)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ACCOUNT_CITY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2246
+                    stepCounter: "190"
+                transform: ""
+          - columnReference:
+              columnCounter: 2286
+              stepCounter: "191"
+            dataType: VARCHAR(30)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ACCOUNT_STATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2247
+                    stepCounter: "190"
+                transform: ""
+          - columnReference:
+              columnCounter: 2287
+              stepCounter: "191"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ACCOUNT_POSTAL_CODE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2275
+                    stepCounter: "190"
+                transform: ""
+          - columnReference:
+              columnCounter: 2288
+              stepCounter: "191"
+            dataType: VARCHAR(20)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ACCOUNT_COUNTRY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2248
+                    stepCounter: "190"
+                transform: ""
+          - columnReference:
+              columnCounter: 2289
+              stepCounter: "191"
+            dataType: VARCHAR(30)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SOURCE_SYSTEM
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2264
+                    stepCounter: "190"
+                transform: ""
+          - columnReference:
+              columnCounter: 2290
+              stepCounter: "191"
+            dataType: VARCHAR
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: RECORD_SOURCE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2274
+                    stepCounter: "190"
+                transform: ""
+          - columnReference:
+              columnCounter: 2291
+              stepCounter: "191"
+            dataType: TIMESTAMP
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LOAD_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2273
+                    stepCounter: "190"
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 2292
+              stepCounter: "191"
+            config: {}
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemVersion: true
+            name: SYSTEM_VERSION
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 2293
+              stepCounter: "191"
+            config: {}
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemCurrentFlag: true
+            name: SYSTEM_CURRENT_FLAG
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 2294
+              stepCounter: "191"
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemStartDate: true
+            name: SYSTEM_START_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 2295
+              stepCounter: "191"
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemEndDate: true
+            name: SYSTEM_END_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST('2999-12-31 00:00:00' AS TIMESTAMP)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 2296
+              stepCounter: "191"
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemCreateDate: true
+            name: SYSTEM_CREATE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 2297
+              stepCounter: "191"
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemUpdateDate: true
+            name: SYSTEM_UPDATE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: TARGET
+                nodeName: HUB_POWER_OPPORTUNITY
+              - locationName: SRC
+                nodeName: SAT_POWER_OPPORTUNITY
+            join:
+              joinCondition: |-
+                FROM {{ ref('TARGET', 'HUB_POWER_OPPORTUNITY') }} "HUB_POWER_OPPORTUNITY"
+                INNER JOIN {{ ref('SRC', 'SAT_POWER_OPPORTUNITY') }} "SAT_POWER_OPPORTUNITY"
+                ON "HUB_POWER_OPPORTUNITY"./*COLUMN*/ = "SAT_POWER_OPPORTUNITY"./*COLUMN*/
+            name: DIM_POWER_OPPORTUNITY_POWER_OPPORTUNITY
+            noLinkRefs: []
+      name: DIM_POWER_OPPORTUNITY_POWER_OPPORTUNITY
+      overrideSQL: false
+      schema: ""
+      sqlType: Dimension
+      type: sql
+    stepCounter: "191"

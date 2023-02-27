@@ -1,0 +1,197 @@
+steps:
+  SAT_POWER_OPPORTUNITY-190:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+      database: ""
+      dependencies: []
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationID: ""
+      locationName: SRC
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 2270
+              stepCounter: "190"
+            config:
+              isHubHash: true
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SOURCEACCOUNT_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2147
+                    stepCounter: "179"
+                transform: ""
+          - columnReference:
+              columnCounter: 2255
+              stepCounter: "190"
+            config:
+              isChangeHash: true
+            dataType: VARCHAR(200)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ACCOUNT_NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2026
+                    stepCounter: "179"
+                transform: ""
+          - columnReference:
+              columnCounter: 2245
+              stepCounter: "190"
+            config:
+              isChangeHash: true
+            dataType: VARCHAR(50)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ACCOUNT_STREET
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2015
+                    stepCounter: "179"
+                transform: ""
+          - columnReference:
+              columnCounter: 2246
+              stepCounter: "190"
+            config:
+              isChangeHash: true
+            dataType: VARCHAR(30)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ACCOUNT_CITY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2016
+                    stepCounter: "179"
+                transform: ""
+          - columnReference:
+              columnCounter: 2247
+              stepCounter: "190"
+            config:
+              isChangeHash: true
+            dataType: VARCHAR(30)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ACCOUNT_STATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2017
+                    stepCounter: "179"
+                transform: ""
+          - columnReference:
+              columnCounter: 2275
+              stepCounter: "190"
+            config:
+              isChangeHash: true
+            dataType: NUMBER(38,0)
+            description: ""
+            name: ACCOUNT_POSTAL_CODE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2019
+                    stepCounter: "179"
+                transform: ""
+          - columnReference:
+              columnCounter: 2248
+              stepCounter: "190"
+            config:
+              isChangeHash: true
+            dataType: VARCHAR(20)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ACCOUNT_COUNTRY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2018
+                    stepCounter: "179"
+                transform: ""
+          - columnReference:
+              columnCounter: 2264
+              stepCounter: "190"
+            config: {}
+            dataType: VARCHAR(30)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SOURCE_SYSTEM
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2141
+                    stepCounter: "179"
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 2274
+              stepCounter: "190"
+            config: {}
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemRecordSource: true
+            name: RECORD_SOURCE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POWER'"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 2273
+              stepCounter: "190"
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemCreateDate: true
+            name: LOAD_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: TARGET
+                nodeName: STG_SRC_ACCOUNT_SRC_POWER_OPPORTUNITY
+            join:
+              joinCondition: FROM {{ ref('TARGET', 'STG_SRC_ACCOUNT_SRC_POWER_OPPORTUNITY') }} "STG_SRC_ACCOUNT_SRC_POWER_OPPORTUNITY"
+            name: SAT_POWER_OPPORTUNITY
+            noLinkRefs: []
+      name: SAT_POWER_OPPORTUNITY
+      overrideSQL: false
+      schema: ""
+      sqlType: COALESCE-DATA_VAULT::3
+      type: sql
+    stepCounter: "190"

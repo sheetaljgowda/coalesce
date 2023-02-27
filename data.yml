@@ -1,5 +1,12 @@
 defaultStorageMapping: SRC
-jobs: {}
+jobs:
+  Job-7:
+    excludeSelector: ""
+    id: 7
+    includeSelector: "+{ subgraph: \"Src_to_stg\" }"
+    name: New Job
+    steps: []
+    subgraphs: []
 locations:
   SRC:
     mappingDefinitions:
@@ -2706,5 +2713,12 @@ stepTypes:
             {% endif %}
     name: Persistent Stage
     version: 1
-subgraphs: {}
+subgraphs:
+  Subgraph-5:
+    id: 5
+    name: Src_to_stg
+    steps:
+      - "177"
+      - "178"
+      - "179"
 version: 1

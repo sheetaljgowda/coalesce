@@ -14,7 +14,7 @@ steps:
       isDataVault: false
       isMultisource: false
       locationID: ""
-      locationName: SRC
+      locationName: TARGET
       materializationType: table
       metadata:
         appliedNodeTests: []
@@ -24,8 +24,6 @@ steps:
               stepCounter: "179"
             dataType: VARCHAR(50)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: ACCOUNT_ID
             nullable: true
             sourceColumnReferences:
@@ -38,8 +36,6 @@ steps:
               stepCounter: "179"
             dataType: VARCHAR(50)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: ACCOUNT_STREET
             nullable: true
             sourceColumnReferences:
@@ -52,8 +48,6 @@ steps:
               stepCounter: "179"
             dataType: VARCHAR(30)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: ACCOUNT_CITY
             nullable: true
             sourceColumnReferences:
@@ -66,8 +60,6 @@ steps:
               stepCounter: "179"
             dataType: VARCHAR(30)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: ACCOUNT_STATE
             nullable: true
             sourceColumnReferences:
@@ -80,8 +72,6 @@ steps:
               stepCounter: "179"
             dataType: VARCHAR(20)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: ACCOUNT_COUNTRY
             nullable: true
             sourceColumnReferences:
@@ -94,8 +84,6 @@ steps:
               stepCounter: "179"
             dataType: NUMBER(38,0)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: ACCOUNT_POSTAL_CODE
             nullable: true
             sourceColumnReferences:
@@ -108,8 +96,6 @@ steps:
               stepCounter: "179"
             dataType: VARCHAR(50)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: OPPORTUNITY_ID
             nullable: true
             sourceColumnReferences:
@@ -122,8 +108,6 @@ steps:
               stepCounter: "179"
             dataType: VARCHAR(50)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: OPPLINE_ID
             nullable: true
             sourceColumnReferences:
@@ -136,8 +120,6 @@ steps:
               stepCounter: "179"
             dataType: TIMESTAMP_NTZ(9)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: CLOSE_DATE
             nullable: true
             sourceColumnReferences:
@@ -150,8 +132,6 @@ steps:
               stepCounter: "179"
             dataType: TIMESTAMP_NTZ(9)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: CREATED_DATE
             nullable: true
             sourceColumnReferences:
@@ -164,8 +144,6 @@ steps:
               stepCounter: "179"
             dataType: TIMESTAMP_NTZ(9)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: EFFECTIVE_DATE
             nullable: true
             sourceColumnReferences:
@@ -178,8 +156,6 @@ steps:
               stepCounter: "179"
             dataType: VARCHAR(200)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: ACCOUNT_NAME
             nullable: true
             sourceColumnReferences:
@@ -192,8 +168,6 @@ steps:
               stepCounter: "179"
             dataType: VARCHAR(25)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: ACCOUNT_EID
             nullable: true
             sourceColumnReferences:
@@ -206,8 +180,6 @@ steps:
               stepCounter: "179"
             dataType: VARCHAR(150)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: OPP_OWNER_FULL_NAME
             nullable: true
             sourceColumnReferences:
@@ -220,8 +192,6 @@ steps:
               stepCounter: "179"
             dataType: VARCHAR(50)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: PRODUCT_ID
             nullable: true
             sourceColumnReferences:
@@ -234,8 +204,6 @@ steps:
               stepCounter: "179"
             dataType: VARCHAR(30)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: SALES_CATEGORY
             nullable: true
             sourceColumnReferences:
@@ -248,8 +216,6 @@ steps:
               stepCounter: "179"
             dataType: VARCHAR(40)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: SALES_STAGE
             nullable: true
             sourceColumnReferences:
@@ -266,8 +232,6 @@ steps:
               stepCounter: "179"
             dataType: VARCHAR(2000)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DESCRIPTION
             nullable: true
             sourceColumnReferences:
@@ -280,14 +244,234 @@ steps:
               stepCounter: "179"
             dataType: VARCHAR(20)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: TYPE
             nullable: true
             sourceColumnReferences:
               - columnReferences:
                   - columnCounter: 2013
                     stepCounter: "178"
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 2140
+              stepCounter: "179"
+            config: {}
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: EXTRACT_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 0
+                    stepCounter: "0"
+                transform: sysdate()
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 2141
+              stepCounter: "179"
+            config: {}
+            dataType: VARCHAR(30)
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: SOURCE_SYSTEM
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 0
+                    stepCounter: "0"
+                transform: "'POWERSL'"
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 2142
+              stepCounter: "179"
+            config: {}
+            dataType: VARCHAR(30)
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: CHANNEL
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 0
+                    stepCounter: "0"
+                transform: "'Direct'"
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 2143
+              stepCounter: "179"
+            config: {}
+            dataType: NUMBER(30,0)
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: CONVERSION_RATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 0
+                    stepCounter: "0"
+                transform: "1"
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 2144
+              stepCounter: "179"
+            config: {}
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: CURRENCY_CODE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 0
+                    stepCounter: "0"
+                transform: "'USD'"
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 2145
+              stepCounter: "179"
+            config: {}
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: FUNDING_TYPE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 0
+                    stepCounter: "0"
+                transform: "'ASO'"
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 2146
+              stepCounter: "179"
+            config: {}
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: MARKET
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 0
+                    stepCounter: "0"
+                transform: "'Mid Market Employer'"
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 2147
+              stepCounter: "179"
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: SHA256
+            hashedColumns:
+              - columnCounter: 2014
+                stepCounter: "179"
+              - columnCounter: 2141
+                stepCounter: "179"
+            name: SOURCEACCOUNT_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 2148
+              stepCounter: "179"
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: SHA256
+            hashedColumns:
+              - columnCounter: 2020
+                stepCounter: "179"
+              - columnCounter: 2021
+                stepCounter: "179"
+              - columnCounter: 2141
+                stepCounter: "179"
+            name: POWEROPPORTUNITY_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 2149
+              stepCounter: "179"
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: SHA256
+            hashedColumns:
+              - columnCounter: 2014
+                stepCounter: "179"
+              - columnCounter: 2020
+                stepCounter: "179"
+              - columnCounter: 2021
+                stepCounter: "179"
+              - columnCounter: 2141
+                stepCounter: "179"
+            name: LINK_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
                 transform: ""
         cteString: ""
         enabledColumnTestIDs: []

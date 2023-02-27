@@ -1,0 +1,118 @@
+steps:
+  HUB_POWER_OPPORTUNITY-187:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+      database: ""
+      dependencies: []
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationID: ""
+      locationName: TARGET
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 2178
+              stepCounter: "187"
+            config:
+              isHubHash: true
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: POWEROPPORTUNITY_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2148
+                    stepCounter: "179"
+                transform: ""
+          - columnReference:
+              columnCounter: 2157
+              stepCounter: "187"
+            dataType: VARCHAR(50)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: OPPORTUNITY_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2020
+                    stepCounter: "179"
+                transform: ""
+          - columnReference:
+              columnCounter: 2158
+              stepCounter: "187"
+            dataType: VARCHAR(50)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: OPPLINE_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2021
+                    stepCounter: "179"
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 2180
+              stepCounter: "187"
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemCreateDate: true
+            name: LOAD_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 2181
+              stepCounter: "187"
+            config: {}
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemRecordSource: true
+            name: RECORD_SOURCE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POWER'"
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases:
+              STG_SRC_ACCOUNT_SRC_POWER_OPPORTUNITY: "179"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: TARGET
+                nodeName: STG_SRC_ACCOUNT_SRC_POWER_OPPORTUNITY
+            join:
+              joinCondition: FROM {{ ref('TARGET', 'STG_SRC_ACCOUNT_SRC_POWER_OPPORTUNITY') }} "STG_SRC_ACCOUNT_SRC_POWER_OPPORTUNITY"
+            name: HUB_POWER_OPPORTUNITY
+            noLinkRefs: []
+      name: HUB_POWER_OPPORTUNITY
+      overrideSQL: false
+      schema: ""
+      sqlType: COALESCE-DATA_VAULT::1
+      type: sql
+    stepCounter: "187"

@@ -1,5 +1,5 @@
 steps:
-  SAT_POWER_OPPORTUNITY-190:
+  SAT_POWER_ACCOUNT-190:
     operation:
       config:
         postSQL: ""
@@ -187,9 +187,9 @@ steps:
                 nodeName: STG_SRC_ACCOUNT_SRC_POWER_OPPORTUNITY
             join:
               joinCondition: FROM {{ ref('TARGET', 'STG_SRC_ACCOUNT_SRC_POWER_OPPORTUNITY') }} "STG_SRC_ACCOUNT_SRC_POWER_OPPORTUNITY"
-            name: SAT_POWER_OPPORTUNITY
+            name: SAT_POWER_ACCOUNT
             noLinkRefs: []
-      name: SAT_POWER_OPPORTUNITY
+      name: SAT_POWER_ACCOUNT
       overrideSQL: false
       schema: ""
       sqlType: COALESCE-DATA_VAULT::3

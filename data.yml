@@ -3,7 +3,7 @@ jobs:
   Job-7:
     excludeSelector: ""
     id: 7
-    includeSelector: "+{ subgraph: \"Src_to_stg\" }"
+    includeSelector: "+{ subgraph: \"Src_to_stg\" }+"
     name: New Job
     steps: []
     subgraphs: []

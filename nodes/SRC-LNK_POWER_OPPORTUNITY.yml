@@ -113,7 +113,9 @@ steps:
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
-          - customSQL:
+          - aliases:
+              STG_SRC_ACCOUNT_SRC_POWER_OPPORTUNITY: "179"
+            customSQL:
               customSQL: ""
             dependencies:
               - locationName: TARGET

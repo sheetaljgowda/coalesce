@@ -1,0 +1,156 @@
+steps:
+  V_POWER_OPPORTUNITY_POWER_OPPORTUNITY-202:
+    operation:
+      config:
+        insertStrategy: UNION
+        selectDistinct: false
+      database: ""
+      dependencies: []
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationID: ""
+      locationName: SRC
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 2444
+              stepCounter: "202"
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LINK_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2241
+                    stepCounter: "189"
+                transform: ""
+          - columnReference:
+              columnCounter: 2445
+              stepCounter: "202"
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SOURCEACCOUNT_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2239
+                    stepCounter: "189"
+                transform: ""
+          - columnReference:
+              columnCounter: 2439
+              stepCounter: "202"
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: POWEROPPORTUNITY_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2178
+                    stepCounter: "187"
+                transform: ""
+          - columnReference:
+              columnCounter: 2440
+              stepCounter: "202"
+            dataType: VARCHAR(50)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: OPPORTUNITY_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2157
+                    stepCounter: "187"
+                transform: ""
+          - columnReference:
+              columnCounter: 2441
+              stepCounter: "202"
+            dataType: VARCHAR(50)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: OPPLINE_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2158
+                    stepCounter: "187"
+                transform: ""
+          - columnReference:
+              columnCounter: 2447
+              stepCounter: "202"
+            dataType: VARCHAR(30)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SOURCE_SYSTEM
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2233
+                    stepCounter: "189"
+                transform: ""
+          - columnReference:
+              columnCounter: 2448
+              stepCounter: "202"
+            dataType: TIMESTAMP
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LOAD_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2242
+                    stepCounter: "189"
+                transform: ""
+          - columnReference:
+              columnCounter: 2449
+              stepCounter: "202"
+            dataType: VARCHAR
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: RECORD_SOURCE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2243
+                    stepCounter: "189"
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases:
+              HUB_POWER_OPPORTUNITY: "187"
+              LNK_POWER_OPPORTUNITY: "189"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: TARGET
+                nodeName: HUB_POWER_OPPORTUNITY
+              - locationName: SRC
+                nodeName: LNK_POWER_OPPORTUNITY
+            join:
+              joinCondition: |-
+                FROM {{ ref('TARGET', 'HUB_POWER_OPPORTUNITY') }} "HUB_POWER_OPPORTUNITY"
+                INNER JOIN {{ ref('SRC', 'LNK_POWER_OPPORTUNITY') }} "LNK_POWER_OPPORTUNITY"
+                ON "HUB_POWER_OPPORTUNITY".POWEROPPORTUNITY_HK = "LNK_POWER_OPPORTUNITY".POWEROPPORTUNITY_HK
+            name: V_POWER_OPPORTUNITY_POWER_OPPORTUNITY
+            noLinkRefs: []
+      name: V_POWER_OPPORTUNITY_POWER_OPPORTUNITY
+      overrideSQL: false
+      schema: ""
+      sqlType: View
+      type: sql
+    stepCounter: "202"
